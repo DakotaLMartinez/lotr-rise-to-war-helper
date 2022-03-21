@@ -30,6 +30,7 @@ export default function App() {
           <section className="mt-6 px-8 max-w-7xl mx-auto grid sm:grid-cols-6">
             <aside className="flex flex-col text-left">
               <StyledNavLink to="/commanders">Commanders</StyledNavLink>
+              <StyledNavLink to="/experience">Experience</StyledNavLink>
               <StyledNavLink to="/troops">Troops</StyledNavLink>
               <StyledNavLink to="/events">Events</StyledNavLink>
               <StyledNavLink to="/land">Land</StyledNavLink>
@@ -38,6 +39,7 @@ export default function App() {
             <article className="mt-6 sm:col-span-5">
               <Routes>
                 <Route path="commanders" element={<Commanders />} />
+                <Route path="experience" element={<Experience />} />
                 <Route path="troops" element={<Troops />} />
                 <Route path="events" element={<Events />} />
                 <Route path="land" element={<Land />} />
